@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FuzzyWasteRadar - Coimbatore</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Leaflet Map CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+</head>
+<body>
+    <div class="container">
+        <div id="map" class="map"></div>
+
+        <div class="bin-status-container">
+            <h1>FuzzyWasteRadar - Coimbatore</h1>
+            <button id="update-btn" class="update-btn">🔄 Update All Bin Statuses</button>
+            <div class="bin-list">
+                <!-- Bin status and hazard elements will be dynamically injected here -->
+                <div id="bin1" class="bin-item">
+                    <p><strong>RS Puram</strong></p>
+                    <p id="status-bin1">Low</p>
+                    <p id="hazard-bin1">Safe</p>
+                </div>
+                <div id="bin2" class="bin-item">
+                    <p><strong>Gandhipuram</strong></p>
+                    <p id="status-bin2">Low</p>
+                    <p id="hazard-bin2">Safe</p>
+                </div>
+                <!-- More bins will follow... -->
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
